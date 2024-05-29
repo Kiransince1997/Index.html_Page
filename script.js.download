@@ -1,0 +1,21 @@
+function handleYes() {
+    alert("That's great! I love you too.");
+}
+
+function handleNo() {
+    const noButton = document.getElementById('noButton');
+    const yesButton = document.getElementById('yesButton');
+
+    // Swap the buttons text and class
+    if (noButton.textContent === 'No') {
+        noButton.textContent = 'Yes';
+        noButton.className = 'yes';
+        yesButton.textContent = 'No';
+        yesButton.className = 'no';
+    } else {
+        noButton.textContent = 'No';
+        noButton.className = 'no';
+        yesButton.textContent = 'Yes';
+        yesButton.className = 'yes';
+    }
+}
